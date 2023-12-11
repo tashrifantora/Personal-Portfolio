@@ -7,8 +7,11 @@ import About from '../About/About';
 const NavBar = () => {
     const navLinks = <>
         <li className='text-lg text-white font-semibold'><Link to="/home">Home</Link></li>
-        <li className='text-lg text-white font-semibold'><Link to="/about">About</Link></li>
+        <li className='text-lg text-white font-semibold'><Link to="/home">Skills</Link></li>
+        <li className='text-lg text-white font-semibold'><Link to="/about">Education</Link></li>
+        <li className='text-lg text-white font-semibold'><Link to="/about">About Me</Link></li>
         <li className='text-lg text-white font-semibold'><Link to="/about">Contact</Link></li>
+
     </>
     return (
         <div>
@@ -40,7 +43,7 @@ const NavBar = () => {
                         <div className="max-w-md ml-20 text-white mt-28">
                             <h1 className="text-5xl font-bold">Hello<span className='text-7xl'>.</span></h1>
                             <p className="py-6 text-2xl">---- I'm Subrina Yeasmin <br /> <span className='ml-36 text-4xl font-semibold'>Antora</span></p>
-                            <p className='mb-7 text-xl'>Front-End Developer skilled in
+                            <p className='mb-7 text-xl'>A Front-End Developer skilled in
                                 HTML, CSS, and JavaScript. An eager learner with
                                 a passion for creating responsive, user-centric
                                 web applications. Collaborative team player
