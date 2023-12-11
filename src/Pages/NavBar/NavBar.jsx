@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo2.jpg'
-import img from '../../assets/photo_2023-12-10_02-06-19 (2).jpg'
+import logo from '../../assets/logo2.jpg';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, } from "react-icons/fa";
 import './navbar.css'
+import About from '../About/About';
 
 const NavBar = () => {
     const navLinks = <>
@@ -34,7 +35,7 @@ const NavBar = () => {
 
             {/* Home */}
             <div className=''>
-                <div className=" flex justify-around gap-10 h-[700px] bg-[#2d383f]">
+                <div className=" flex justify-around gap-10 h-[700px] bg-[#2d383f] relative">
                     <div className="text-left ">
                         <div className="max-w-md ml-20 text-white mt-28">
                             <h1 className="text-5xl font-bold">Hello<span className='text-7xl'>.</span></h1>
@@ -53,18 +54,18 @@ const NavBar = () => {
                         <div className="hero-overlay bg-opacity-40"></div>
                     </div>
                 </div>
+                <div className='text-2xl text-white flex gap-3 justify-end absolute md:right-14 lg:right-80 -mt-12'>
+                    <FaFacebook className='cursor-pointer hover:text-3xl hover:text-sky-700'></FaFacebook>
+                    <FaInstagram className='cursor-pointer hover:text-3xl hover:text-sky-700'></FaInstagram>
+                    <FaGithub className='cursor-pointer hover:text-3xl hover:text-sky-700'></FaGithub>
+                    <FaLinkedin className='cursor-pointer hover:text-3xl hover:text-sky-700'></FaLinkedin>
+                </div>
             </div>
+
+            <About></About>
         </div>
     );
 };
 
 export default NavBar;
-/* 
-<div className="hero h-[700px] " style={{ backgroundImage: 'url(https://i.ibb.co/WWjXxkZ/photo-2023-12-10-02-06-19-2.jpg)' }}>
-                    <div className="hero-overlay bg-opacity-40"></div>
-                    <div className="hero-content  text-neutral-content">
-                    </div>
-                </div>
-
-                <img className='lg:p-8 rounded bg-blend-darken ' src={img} alt="" />
-*/
+/* md:right-10 lg:right-0 md:top-[730px] lg:top-0 mr-5 */
