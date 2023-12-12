@@ -9,6 +9,7 @@ import App from './App';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Home from './Pages/Home/Home';
 import ContactMe from './Pages/ContactMe/ContactMe';
+import Skills from './Pages/Skills/Skills';
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/contact-me",
         element: <ContactMe></ContactMe>
+      },
+      {
+        path: "/skill",
+        element: <Skills></Skills>
       },
 
     ]

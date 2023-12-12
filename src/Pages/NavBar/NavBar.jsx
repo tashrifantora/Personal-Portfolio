@@ -6,7 +6,7 @@ import './navbar.css'
 const NavBar = () => {
     const navLinks = <>
         <li className='text-lg text-white font-semibold'><Link to="/home">Home</Link></li>
-        <li className='text-lg text-white font-semibold'><Link to="/home">Skills</Link></li>
+        <li className='text-lg text-white font-semibold'><Link to="/skill">Skills</Link></li>
 
         <li className='text-lg text-white font-semibold'><Link to="/about-me">About Me</Link></li>
         <li className='text-lg text-white font-semibold'><Link to="/contact-me">Contact</Link></li>
