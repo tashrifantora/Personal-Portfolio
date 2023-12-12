@@ -7,23 +7,23 @@ import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
     return (
-        <div className=''>
-            <div className='max-w-7xl mx-auto  flex gap-4 '>
+        <div className='px-3'>
+            <div className='max-w-7xl mx-auto flex-col gap-4 '>
                 {/* Side 1 */}
                 <div className='mt-32'>
                     <div className='relative'>
-                        <img className='border-8 border-black rounded-full md:w-48 lg:w-64 absolute -top-28 ml-12' src={Me} alt="" />
+                        <img className='border-4 md:border-8 border-black rounded-full w-36 md:w-48 lg:w-64 absolute -top-20 md:-top-28 ml-52 md:ml-12' src={Me} alt="" />
                     </div>
 
                     <div className='bg-[#2d383f] rounded  text-white lg:w-96 md:w-80 lg:p-3 p-1  min-h-screen '>
-                        <div className=' mb-14'>
-                            <h1 className=' text-xl font-semibols flex items-center md:mt-28 lg:mt-44 mb-5 gap-1'><FaUser className='text-xl ml-3'></FaUser>  About Me:</h1>
-                            <p className='ml-3 text-lg'><span className='text-xl font-bold mb-20'>Hello!!</span> <br /> I am Antora. A front-End Developer and also a student. I passionate about crafting user-friendly websites using HTML, CSS,  JavaScript, Framework [ React, Tailwind ] and the way to Back-End. </p>
+                        <div className='mb-8 md:mb-14'>
+                            <h1 className=' text-xl font-semibols flex items-center mt-20 md:mt-28 lg:mt-44 mb-5 gap-1'><FaUser className='text-xl ml-3'></FaUser>  About Me:</h1>
+                            <p className='ml-3 md:text-lg'><span className='text-base md:text-xl font-bold mb-20'>Hello!!</span> <br /> I am Antora. A front-End Developer and also a student. I passionate about crafting user-friendly websites using HTML, CSS,  JavaScript, Framework [ React, Tailwind ] and the way to Back-End. </p>
                         </div>
 
                         {/* Contact */}
-                        <div className=' mb-14'>
-                            <h1 className=' text-xl font-bold flex items-center mt-28 mb-5 gap-1'><MdContactPage className='text-2xl ml-3 font-bold'></MdContactPage>Contact:</h1>
+                        <div className='mb-8 md:mb-14'>
+                            <h1 className=' md:text-xl font-bold flex items-center mt-28 mb-5 gap-1'><MdContactPage className='text-2xl ml-3 font-bold'></MdContactPage>Contact:</h1>
                             <p className='ml-5 text-lg'>
                                 <div className='flex items-center gap-4 mb-3'>
                                     <IoCall></IoCall> <span>+8801746780***</span>
@@ -38,8 +38,8 @@ const AboutMe = () => {
                         </div>
 
                         {/* Soft Skills */}
-                        <div>
-                            <h1 className='text-xl font-bold flex items-center mt-20 mb-5 ml-4 gap-2 '><PiLinkSimpleBold></PiLinkSimpleBold>Social Links</h1>
+                        <div className='mb-5'>
+                            <h1 className='text-xl font-bold flex items-center mt-20 mb-8 ml-4 gap-2 '><PiLinkSimpleBold></PiLinkSimpleBold>Social Links</h1>
 
                             <div className='text-3xl flex gap-3 ml-10'>
                                 <Link to='https://github.com/tashrifantora'>

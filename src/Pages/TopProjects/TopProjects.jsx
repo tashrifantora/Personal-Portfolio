@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import github from '../../assets/GitHub_ Let’s build from here.jpg'
 const TopProjects = () => {
     return (
-        <div className=''>
+        <div className='px-5 md:px-10'>
             <h1 className='text-4xl font-bold my-10 ml-5'>My - Top - Projects</h1>
 
 

@@ -10,9 +10,9 @@ import TopProjects from '../TopProjects/TopProjects'
 
 const Skills = () => {
     return (
-        <div>
+        <div className='px-5 md:px:10'>
             <div>
-                <h1 className="text-4xl font-bold mt-10 ">Skill-Set</h1>
+                <h1 className=".text-4xl font-bold mt-10 ">Skill-Set</h1>
                 <div className="border-b-4 border-black 
             rounded-lg md:w-1/12 lg:w-20 mt-1 mb-10"></div>
 
