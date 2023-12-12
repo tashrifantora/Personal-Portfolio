@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const AboutMe = () => {
     return (
         <div className='px-3'>
-            <div className='max-w-7xl mx-auto flex-col gap-4 '>
+            <div className='max-w-7xl mx-auto flex flex-col md:flex-row gap-4 '>
                 {/* Side 1 */}
                 <div className='mt-32'>
                     <div className='relative'>

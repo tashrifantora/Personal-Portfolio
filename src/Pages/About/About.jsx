@@ -9,7 +9,7 @@ const About = () => {
                 <FaArrowDownLong ></FaArrowDownLong>
             </p>
 
-            <div className="flex gap-20 p-10 max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row gap-20 p-10 max-w-7xl mx-auto">
                 <div className="md:w-1/2 lg:w-1/3">
                     <img className="rounded-lg lg:ml-20 " src={img} alt="" />
                 </div>
