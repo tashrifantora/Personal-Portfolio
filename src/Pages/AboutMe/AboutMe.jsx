@@ -1,7 +1,6 @@
 import Me from '../../assets/aboutme.jpg'
 import { FaUser, FaUserGraduate } from "react-icons/fa";
 import { MdContactPage, MdEmail, MdAddLocationAlt } from "react-icons/md";
-import { FaGripLinesVertical } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 
 const AboutMe = () => {
@@ -16,7 +15,7 @@ const AboutMe = () => {
 
                     <div className='bg-[#2d383f] rounded  text-white lg:w-96 md:w-80 lg:p-3 p-1  min-h-screen '>
                         <div className=' mb-14'>
-                            <h1 className=' text-xl font-semibols flex items-center mt-28 mb-5 gap-1'><FaUser className='text-xl ml-3'></FaUser>  About Me:</h1>
+                            <h1 className=' text-xl font-semibols flex items-center md:mt-28 lg:mt-44 mb-5 gap-1'><FaUser className='text-xl ml-3'></FaUser>  About Me:</h1>
                             <p className='ml-3 text-lg'><span className='text-xl font-bold mb-20'>Hello!!</span> <br /> I am Antora. A front-End Developer and also a student. I passionate about crafting user-friendly websites using HTML, CSS,  JavaScript, Framework [ React, Tailwind ] and the way to Back-End. </p>
                         </div>
 
@@ -43,7 +42,7 @@ const AboutMe = () => {
                 {/* Side 2 */}
                 <div className='bg-blue-200 mt-10 w-11/12 p-5'>
                     <div className='mb-14'>
-                        <h1 className='text-4xl mb-2   font-semibold uppercase'>Subrina Yeasmin</h1>
+                        <h1 className='text-4xl mb-2 mt-5  font-semibold uppercase'>Subrina Yeasmin</h1>
                         <span className='text-5xl font-bold uppercase'>Antora</span>
                     </div>
 
@@ -52,10 +51,10 @@ const AboutMe = () => {
                         <h1 className='text-2xl font-bold flex items-center mt-28 mb-5 gap-2'><FaUserGraduate></FaUserGraduate>Education</h1>
                     </div>
                     <div>
-                        <h1 className='text-xl'> Degree:</h1>
+                        <h1 className='text-xl mb-4 font-semibold'> Degree:</h1>
 
                         {/* Try Zone */}
-                        <div className="flex h-[300px] p-2">
+                        <div className="flex max-h-screen p-2 leading-7">
 
                             <div className="bg-black relative w-1">
                                 <p className='text-8xl absolute -bottom-4 -left-2'>.</p>
@@ -63,19 +62,32 @@ const AboutMe = () => {
                                 <p className='text-8xl absolute -top-24 mt-2 -left-2'>.</p>
                             </div>
 
-                            <div className="pl-[20px]">Hello</div>
+                            <div className="pl-4 ">
+                                <p className='text-lg font-medium'>University of Liberal Arts Bangladesh </p>
+                                <p className='font-semibold'>Department of English</p>
+                                <p>First Semester</p>
+                            </div>
                         </div>
+                    </div>
+
+                    {/* College */}
+                    <div>
+                        <h1 className='text-xl mb-4 font-semibold  mt-14'> College:</h1>
+
                         {/* Try Zone */}
+                        <div className="flex max-h-screen p-2">
 
-                        {/*  <div>
-                            <p className='text-7xl mr-5'>.</p>
-                            <div className="h-[400px]  bg-black w-[2px]"></div>
-                        </div> */}
+                            <div className="bg-black relative w-1">
+                                <p className='text-8xl absolute -bottom-4 -left-2'>.</p>
 
-                        <div>
-                            <p>University of Liberal Arts Bangladesh </p>
-                            <p>Department of English</p>
-                            <p>First Semester</p>
+                                <p className='text-8xl absolute -top-24 mt-2 -left-2'>.</p>
+                            </div>
+
+                            <div className="pl-4 leading-7">
+                                <p className='text-lg font-medium'>Amrita Lal Dey College, Barishal</p>
+                                <p className='font-semibold'> Arts and Humanities</p>
+                                <p>G.P.A : 5.00 </p>
+                            </div>
                         </div>
                     </div>
                 </div>
