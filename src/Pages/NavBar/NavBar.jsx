@@ -24,8 +24,9 @@ const NavBar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <div to="/" className="text-xl cursor-pointer">
-                        <img className='w-20 rounded' src={logo} alt="" />
+                    <div className="text-xl flex items-center cursor-pointer">
+                        <img to='/' className='w-20 rounded' src={logo} alt="" />
+                        <p className='text-white font-semibold mb-3'>Developer</p>
                     </div>
                 </div>
                 <div className="navbar-end hidden lg:flex">

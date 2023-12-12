@@ -1,7 +1,9 @@
 import Me from '../../assets/aboutme.jpg'
-import { FaUser, FaUserGraduate, FaAngleDoubleRight } from "react-icons/fa";
+import { FaUser, FaUserGraduate, FaAngleDoubleRight, FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdContactPage, MdEmail, MdAddLocationAlt } from "react-icons/md";
+import { PiLinkSimpleBold } from "react-icons/pi";
 import { IoCall } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
     return (
@@ -33,6 +35,26 @@ const AboutMe = () => {
                                     <MdAddLocationAlt></MdAddLocationAlt> <span>Dhaka, Bangladesh</span>
                                 </div>
                             </p>
+                        </div>
+
+                        {/* Soft Skills */}
+                        <div>
+                            <h1 className='text-xl font-bold flex items-center mt-20 mb-5 ml-4 gap-2 '><PiLinkSimpleBold></PiLinkSimpleBold>Social Links</h1>
+
+                            <div className='text-3xl flex gap-3 ml-10'>
+                                <Link to='https://github.com/tashrifantora'>
+                                    <FaGithub className='cursor-pointer' ></FaGithub>
+                                </Link>
+
+
+                                <Link to='https://www.linkedin.com/in/subrina-yeasmin-antora-27a06b268/'>
+                                    <FaLinkedin></FaLinkedin>
+                                </Link>
+
+                                <Link className='tooltip  hover:tooltip-bottom' data-tip="antoraquanta65@gmail.com">
+                                    <MdEmail></MdEmail>
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
@@ -101,6 +123,7 @@ const AboutMe = () => {
                             <li><span className='font-semibold'>Leadership:</span> Developing qualities that inspire and guide others, fostering a positive environment</li>
                         </ul>
                     </div>
+
 
                 </div>
             </div>
