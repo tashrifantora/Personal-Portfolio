@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../assets/logo2.jpg';
+import logo from '../../assets/logo3-removebg-preview.png';
 import './navbar.css'
 
 
@@ -25,7 +25,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <div to="/" className="text-xl cursor-pointer">
-                        <img className='w-14 rounded' src={logo} alt="" />
+                        <img className='w-20 rounded' src={logo} alt="" />
                     </div>
                 </div>
                 <div className="navbar-end hidden lg:flex">

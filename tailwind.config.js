@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        libre: ["Black Ops One"],
+      }
+    },
   },
   plugins: [require("daisyui")],
  
