@@ -1,5 +1,5 @@
 import Me from '../../assets/aboutme.jpg'
-import { FaUser, FaUserGraduate } from "react-icons/fa";
+import { FaUser, FaUserGraduate, FaAngleDoubleRight } from "react-icons/fa";
 import { MdContactPage, MdEmail, MdAddLocationAlt } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 
@@ -10,7 +10,7 @@ const AboutMe = () => {
                 {/* Side 1 */}
                 <div className='mt-32'>
                     <div className='relative'>
-                        <img className='border-8 border-white rounded-full md:w-48 lg:w-64 absolute -top-28 ml-12' src={Me} alt="" />
+                        <img className='border-8 border-black rounded-full md:w-48 lg:w-64 absolute -top-28 ml-12' src={Me} alt="" />
                     </div>
 
                     <div className='bg-[#2d383f] rounded  text-white lg:w-96 md:w-80 lg:p-3 p-1  min-h-screen '>
@@ -40,15 +40,15 @@ const AboutMe = () => {
                 </div>
 
                 {/* Side 2 */}
-                <div className='bg-blue-200 mt-10 w-11/12 p-5'>
-                    <div className='mb-14'>
+                <div className='mt-5 w-11/12 p-10'>
+                    <div className='mb-10'>
                         <h1 className='text-4xl mb-2 mt-5  font-semibold uppercase'>Subrina Yeasmin</h1>
                         <span className='text-5xl font-bold uppercase'>Antora</span>
                     </div>
 
                     {/* Education */}
                     <div>
-                        <h1 className='text-2xl font-bold flex items-center mt-28 mb-5 gap-2'><FaUserGraduate></FaUserGraduate>Education</h1>
+                        <h1 className='text-2xl font-bold flex items-center mt-20 mb-5 gap-2'><FaUserGraduate></FaUserGraduate>Education</h1>
                     </div>
                     <div>
                         <h1 className='text-xl mb-4 font-semibold'> Degree:</h1>
@@ -90,6 +90,18 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Soft Skills */}
+                    <div>
+                        <h1 className='text-2xl font-bold flex items-center mt-20 mb-5 gap-2'><FaAngleDoubleRight></FaAngleDoubleRight>Soft Skill</h1>
+                        <ul className='list-disc ml-16 leading-8 text-lg'>
+                            <li>Great communication skill</li>
+                            <li> Being flexible and open-minded to adjust to new situations, environments, and changes in work or life.</li>
+                            <li><span className='font-semibold'>Teamwork/Collaboration:</span>Working effectively with others, fostering teamwork, and contributing positively in group settings.</li>
+                            <li><span className='font-semibold'>Leadership:</span> Developing qualities that inspire and guide others, fostering a positive environment</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>

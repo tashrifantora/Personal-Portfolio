@@ -8,6 +8,8 @@ import {
 import App from './App';
 import AboutMe from './Pages/AboutMe/AboutMe';
 import Home from './Pages/Home/Home';
+import ContactMe from './Pages/ContactMe/ContactMe';
+
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/about-me",
         element: <AboutMe></AboutMe>
+      },
+      {
+        path: "/contact-me",
+        element: <ContactMe></ContactMe>
       },
 
     ]
